@@ -1,0 +1,88 @@
+body{
+	font-family: Verdana, Arial;
+	background: #fdfdff;
+	line-height: 25px;
+}
+
+.entry{
+	font-family: Candara, Arial, Verdana;
+	color: #0b5bc4;
+	font-size: 20px;
+	font-weight: bold;
+	display: inline;
+}
+
+ol{
+	direction: rtl;
+	text-align: right;
+	counter-reset: item;
+	padding-right:0.5em;
+}
+ li{
+	font-family: "Segoe UI", Tahoma, Arial;
+	font-size: 16px;
+ }
+ ol li {
+	display: block;
+	}
+
+ol li:before {
+    content: counter(item, arabic-indic) ". ";
+    counter-increment: item;
+    color: #ff4444;
+
+}
+span.Phonetic{
+	font-family: Verdana, Arial;
+	color: #777777;
+	font-size: 14px;
+}
+.Phonetic:before{
+	content: "\00a0/\00a0";
+	color: #292929;
+	font-size: 14px;
+}
+.Phonetic:after{
+	content: "\00a0/\00a0";
+	color: #292929;
+	font-size: 14px;
+}
+
+.pos{
+	color: #00b359;
+	font-size:16px;
+	font-family: "Segoe UI", Arial, Verdana, Tahoma;
+	font-weight: bold;
+	font-style: italic;
+	background-color: #fefbbd;
+	border-radius: 6px;
+	text-align: center;
+	padding: 4px;
+	direction: ltr;
+}
+
+#examples {
+    font-family: "Segoe UI", Arial, Verdana, Tahoma;
+	font-size: 16px;
+    border-collapse: collapse;
+    width: 75%;
+	margin: auto;
+}
+
+#examples td {
+    border: 1px solid #DDDDDD;
+    padding: 8px;
+}
+
+#examples tr{
+	text-align: right;
+	direction: rtl;
+	color: #610000;
+}
+#examples tr:nth-child(even){
+	background-color: #fbfbfb;
+}
+
+#examples tr:hover {
+	background-color: #fff68f;
+}
